@@ -1,0 +1,130 @@
+<!DOCTYPE html> <script src="https://kit.fontawesome.com/aefa97f406.js" crossorigin="anonymous"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellbeing-home</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+   
+
+</head>
+<body>
+    <header>
+        <img src="images/wellbeing_logo.png"></a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </header>
+<section class="body">
+    <nav>
+        <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+           <!------ <div class=e1_71> --->
+                <ul>
+                    <li><a href="home.html" class="active">home</a></li>
+                    <li><a href="self_care.html" class="active">self-care</a></li>
+                    <li><a href="nutrition.html" class="active">nutrition</a></li>
+                    <li><a href="stress.html" class="active">stress</a></li>
+                    <li><a href="exercise.html" class="active">exercise</a></li>
+                    <li><a href="social.html" class="active">social</a></li>
+                    <li><a href="mindfulness.html" class="active">mindfulness</a></li>
+                    <li><a href="sleep.html" class="active">sleep</a></li>
+                    <li><a href="quiz.html" class="active">quiz</a></li>
+                </ul>
+            </div>
+    </nav>
+    
+<section class="intro">
+        <h2>How does it work?</h2><br><br>
+        <p>Welcome to our website dedicated to promoting healthy living and well-being! Our focus is to help you create a healthy lifestyle by providing the tools and resources you need to improve your physical, mental, and emotional health.<br>
+        We believe that small changes to your daily routine can make a big difference in your overall well-being. That's why we've designed this website to focus on different aspects of well-being every day of the week.<br><br>
+        </p><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/65snrWJTNDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p><b>Here's a breakdown of our daily topics:</b></p><br>
+        <div class="days">
+        <b>Monday: Self-Care</b><br>
+        Start your week by prioritising self-care. Learn about different practices that can help you relax and rejuvenate and discover tips on integrating self-care into your daily routine.</div>
+        <div class="days">
+        <b>Tuesday: Nutrition</b><br>
+        Learn about the importance of healthy eating habits and get tips on making nutritious choices for you and your family. Discover delicious and healthy recipes that you can prepare at home.<br></div>
+        <div class="days">
+        <b>Wednesday: Stress Management</b><br>
+        Learn how to manage stress effectively and discover relaxation techniques to help you unwind. From breathing exercises to meditation, we have plenty of resources to help your de-stress.<br></div>
+        <div class="days">
+        <b>Thursday: Exercise</b> <br>
+        Get your body moving with our fitness tips and ideas. Learn about exercises and workouts to help you stay fit and healthy and discover the benefits of regular physical activity.<br></div>
+        <div class="days">
+        <b>Friday: Social</b><br>
+        Connecting with others is an essential aspect of well-being. Learn about the importance of socialising and building relationships and discover ways to stay connected with friends and family.<br></div>
+        <div class="days">
+        <b>Saturday: Mindfulness</b><br>
+        Mindfulness practices can help you cultivate awareness and improve your mental health. Learn about mindfulness techniques and discover how they can help you find peace and balance.<br></div>
+        <div class="days">
+        <b>Sunday: Sleep</b><br>
+        Getting enough quality sleep is essential for your physical and mental health. Learn about the benefits of good sleep hygiene and discover tips on improving your sleep habits.</div><br><br>
+
+        <p>We upload articles and useful information related to the daily topic every day. If you want to stay updated, sign up for our newsletter, which will deliver the latest articles directly to your inbox. Our resources will inspire you to make positive changes in your life and lead a healthier, happier lifestyle.</p><br><br>
+</section>
+
+<footer>
+
+    <div class="newsletter-form">
+    <p>SIGN IN FOR OURS DAILY NEWSLEETER!</p><BR>
+    <form id="newsletter-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  
+
+      
+
+    <div class="icons">
+        <a href="http://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+        <a href="https://twitter.com/?lang=en"target="_blank" class="fa-brands fa-twitter"></a>
+        <a href="https://www.tiktok.com/en/" target="_blank" class="fa-brands fa-tiktok"></a>
+        <p>made with <i class="fa fa-heart-o"></i> by PolScot</p>
+    </div>
+</footer>
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+
+
+<script>
+    // get the newsletter subscription form element
+    const newsletterForm = document.querySelector('#newsletter-form');
+  
+    // add a submit event listener to the form
+    newsletterForm.addEventListener('submit', (event) => {
+      // prevent the form from submitting its data to a server
+      event.preventDefault();
+  
+      // get the user's email address from the form input
+      const email = document.querySelector('#email').value;
+  
+      // display a pop-up message with "Thank You"
+      alert(`Thank you for subscribing, ${email}!`);
+    });
+  </script>
+
+</section>
+</body>
+</html>

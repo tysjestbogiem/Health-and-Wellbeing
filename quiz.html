@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellbeing-quiz</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<script src="https://kit.fontawesome.com/aefa97f406.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/wellbeing_logo.png"></a>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </header>
+<section class="body">
+    <nav>
+        <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+           <!------ <div class=e1_71> --->
+                <ul>
+                    <li><a href="home.html" class="active">home</a></li>
+                    <li><a href="self_care.html" class="active">self-care</a></li>
+                    <li><a href="nutrition.html" class="active">nutrition</a></li>
+                    <li><a href="stress.html" class="active">stress</a></li>
+                    <li><a href="exercise.html" class="active">exercise</a></li>
+                    <li><a href="social.html" class="active">social</a></li>
+                    <li><a href="mindfulness.html" class="active">mindfulness</a></li>
+                    <li><a href="sleep.html" class="active">sleep</a></li>
+                    <li><a href="quiz.html" class="active">quiz</a></li>
+                </ul>
+            </div>
+    </nav>
+    
+    <body class="body_quiz">
+		<h1> QUIZ</h1>
+		<p>Check correct answers!</p>
+		<div class="quiz">
+		<div class="row">
+			<div class="quiz_col"> 
+			What is most popular form of self-care? <br><br>
+			A: Eating <br>
+			<bold>B: Sleeping</bold> <br>
+			C: Meditation <br><br>
+			</div>
+			<div class="quiz_col">
+			Which of the following is considered an aspect of emotional health?<br><br>
+			A: Suppleness<br>
+			B: Respect for others <br>
+			<bold>C: Expressing feelings</bold><br><br>
+			</div>
+
+			<div class="quiz_col">
+			What is the recommended dialy sugar limit? <br><br>
+			A: 40g for women/ 60g for men <br>
+			<bold>B: 24g for women/36g for men </bold><br>
+			C: 15g for women/20g for men <br><br>
+			</div>
+			<div class="quiz_col">
+			What is the most common cause of work related stress?? <br><br>
+			A: Managment <br>
+			B: Coworkers <br>
+			<bold>C: Workload </bold><br> 
+			</div>
+			<div class="quiz_col">
+			How much minutes of exercise should be achieved each week? <br><br>
+			A: 300 min <br>
+			B: 30 min <br>
+			<bold>C: 150 min</bold><br><br>
+			</div>
+			<div class="quiz_col">
+			How much time should we spend socialising to be at our happiest?  <br><br> 
+			A: 2 - 3h <br>
+			<bold>B: 7 - 8h </bold><br>
+			C: 10 - 12h <br><br>
+			</div>
+			<div class="quiz_col">
+			What % of people suffer from mental health issues unknowingly?<br><br>
+			<bold>A: 46% </bold><br>
+			B: 34% <br>
+			C: 61% <br><br>
+			</div>
+			
+			<div class="quiz_col">
+			How much sleep are you recommended to get each night?<br><br>
+			<bold>A: 8h </bold><br>
+			B: 5h  <br>
+			C: 10h <br><br>
+			</div>
+			<div class="quiz_col">
+			Which of these health benefits is something an individual gains as a result of an active, healthy lifestyle? <br><br>
+			A: Increased likelihood of depression <br>
+			B: Reduced likelihood of osteoporosis <br>
+			<bold>C: Increased educational achievement</bold><br><br>
+			</div>
+			
+		</div>
+		</div>
+
+	</body>
+
+	
+    <script>
+
+        let userAnswer = "";
+		let score = 0;
+        
+		// question 1 and possible answers A, B, C
+        window.alert("Q1: What is most popular form of self-care? \n A: Eating \n B: Sleeping\n C: Meditation");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+			
+		if (userAnswer == "B")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+		
+		// question and possible answers A, B, C
+		window.alert("Q2: Which of the following is considered an aspect of emotional health? \n A: Suppleness \n B: Respect for others \n C: Expressing feelings");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "C")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+		
+		// question and possible answers A, B, C
+		window.alert("Q3: What is the recommended dialy sugar limit?  \n A: 40g for women/ 60g for men \n B: 24g for women/36g for men \n C: 15g for women/20g for men");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "A")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+		
+		
+		// question and possible answers A, B, C
+		window.alert("Q4: What is the most common cause of work related stress??  \n A: Managment \n B: Coworkers \n C: Workload");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "C")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+		// question and possible answers A, B, C
+		window.alert("Q5: How many minutes of exercise should be achieved each week? \n A: 300 min  \n B: 30 min \n C: 150 min");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "C")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+		// question and possible answers A, B, C
+		window.alert("Q6: How much time should we spend socialising to be at our happiest?  \n A: 2 - 3h  \n B: 7 - 8h \n C: 10 - 12h");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "B")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+		// question and possible answers A, B, C
+		window.alert("Q7: What % of people suffer from mental health issues unknowingly? \n A: 46% \n B: 34%  \n C: 61%");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "A")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+		// question and possible answers A, B, C
+		window.alert("Q8: How much sleep are you recommended to get each night? \n A: 8h \n B: 5h \n C: 10h");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "A")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+        // question and possible answers A, B, C
+		window.alert("Q9: Which of these health benefits is something an individual gains as a result of an active, healthy lifestyle? \n A: Increased likelihood of depression \n B: Reduced likelihood of osteoporosis  \n C: Increased educational achievement");
+		// answer input
+		userAnswer = prompt("Enter A, B, or C");
+		// formula to make answers in capital letters
+        userAnswer = userAnswer.toUpperCase(); 
+		
+		while (userAnswer !="A" && userAnswer !="B" && userAnswer !="C")
+		{
+			// if answer not A, B, C, receive alert 
+			window.alert("Invalid! Enter only A, B or C");
+			userAnswer = prompt("Enter A, B, or C");
+			userAnswer = userAnswer.toUpperCase(); 
+		}
+			
+		if (userAnswer == "C")
+		{
+			//if answer correct add 1 point
+			score = score + 1
+		}
+
+
+		// results view
+		window.alert("Your score is: " + score + "/8");
+	
+    </script>
+
+<footer>
+
+	<div class="newsletter-form">
+		<p>SIGN IN FOR OURS DAILY NEWSLEETER!</p><BR>
+		<form id="newsletter-form">
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<button type="submit">Subscribe</button>
+		  </form>
+	</div>
+
+
+<div class="icons">
+	<a href="http://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
+	<a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+	<a href="https://twitter.com/?lang=en"target="_blank" class="fa-brands fa-twitter"></a>
+	<a href="https://www.tiktok.com/en/" target="_blank" class="fa-brands fa-tiktok"></a>
+	<p>made with <i class="fa fa-heart-o"></i> by PolScot</p>
+</div>
+</footer>
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+
+
+
+<script>
+    // get the newsletter subscription form element
+    const newsletterForm = document.querySelector('#newsletter-form');
+  
+    // add a submit event listener to the form
+    newsletterForm.addEventListener('submit', (event) => {
+      // prevent the form from submitting its data to a server
+      event.preventDefault();
+  
+      // get the user's email address from the form input
+      const email = document.querySelector('#email').value;
+  
+      // display a pop-up message with "Thank You"
+      alert(`Thank you for subscribing, ${email}!`);
+    });
+  </script>
+
+</html>
